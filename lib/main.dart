@@ -1,27 +1,18 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter/rendering.dart';
-
 void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatefulWidget {
+class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
-        appBar: AppBar(
-        backgroundColor: Colors.blue,
-        title: const Text(''),
+      home: Scaffold(
+        body: Text('data'),
       ),
-    ));
+    );
   }
 }
